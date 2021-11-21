@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!-- 해당 국가언어로 변경 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-language" content="en" />
+    <!-- 해당 국가언어로 변경 -->
+    <meta http-equiv="content-style-type" content="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=no"
+    />
+    <meta name="applicaition-name" content="VFUN" />
+
+    <title>What fun? VFUN! 작업중</title>
+
+    <meta
+      name="description"
+      content="Lots of fun games in here! Let's have fun with VFUN!"
+    />
+    <meta
+      name="keywords"
+      content="VFUN, vfun, valofe platform, Atlantica, Combatarms: Reloaded, Combatarms: the Classic, Luminary, FantasyWar Tactics R, Legion of Heroes, 胸懷三國2, 胸怀三国2"
+    />
+    <meta property="og:title" content="VFUN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vfun.valofe.com" />
+    <meta
+      property="og:image"
+      content="https://file.valofe.com/Valofe_file/web/vfun/images/facebook.jpg"
+    />
+    <meta property="og:site_name" content="VFUN" />
+    <meta
+      property="og:description"
+      content="Lots of fun games in here! Let's have fun with VFUN!"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="VFUN" />
+    <meta
+      name="twitter:description"
+      content="Lots of fun games in here! Let's have fun with VFUN!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://file.valofe.com/Valofe_file/web/vfun/images/twitter.jpg"
+    />
+    <meta
+      itemprop="image"
+      content="https://file.valofe.com/Valofe_file/web/vfun/images/facebook.jpg"
+    />
+    <meta
+      name="naver-site-verification"
+      content="d4c181b966e8f5960192f1ef1d2936947af0c4b1"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://file.valofe.com/Valofe_file/web/vfun/images/apple-touch-icon-ipad.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://file.valofe.com/Valofe_file/web/vfun/images/apple-touch-icon-iphone4.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://file.valofe.com/Valofe_file/web/favicon/vfun_favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://file.valofe.com/Valofe_file/web/vfun/css/common/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://file.valofe.com/Valofe_file/web/vfun/css/common/slick.min.css">
+    <link rel="stylesheet" href="https://file.valofe.com/Valofe_file/web/vfun/css/main/main_slick.min.css?20211121020753">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script src="https://file.valofe.com/Valofe_file/web/vfun/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://file.valofe.com/Valofe_file/web/vfun/js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/_slick.js"></script>
+  </head>
+
+  <body>
+    <!-- 로딩 스피너 start -->
+    <div class="wrap-loading">
+      <div class="loading-container">
+        <div class="spinner__container spinner__effect--8">
+          <ul class="spinner">
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+            <li class="spinner__squeare"></li>
+          </ul>
+        </div>
+        <div class="loading-txt">loading</div>
+      </div>
+    </div>
+    <!-- 로딩 스피너 end -->    
+
+    <!-- 컴바인메뉴 start -->
+    <div id="combineMenu" class="clearfix">
+      <div class="wrap-cmb clearfix">
+        <ul class="cb-menu pull-left">
+          <li class="cbm-logo-li">
+            <a href="https://vfun.valofe.com/home" class="cbm-logo"></a>
+          </li>
+
+          <li class="cbm-back">
+            <a href="javascript:void(0);" onclick="">
+              <span class="fa fa-chevron-left"></span>
+            </a>
+          </li>
+
+          <li class="cbm-bar">
+            <a
+              href="javascript:void(0);"
+              class="cbm-game"
+              onclick="fnShowCbm();"
+            >
+              <span class="fa fa-bars"></span>
+            </a>
+          </li>
+        </ul>
+
+        <form action="">
+          <fieldset>
+            <legend class="hidden">LOGIN FORM</legend>
+            <ul class="login-area pull-right">
+              <li id="right-lang">
+                <div class="cbm-sel-lang" id="login-area">
+                  <a href="javascript:void(0);" class="sel-tit on">English</a>
+                  <ul class="view2">
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('en');"
+                        >한국어</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('de');"
+                        >Deutsch</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('tr');"
+                        >Türkçe</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('pt');"
+                        >português</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('tw');"
+                        >中文(繁体)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('jp');"
+                        >日本語</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('cn');"
+                        >中文(简体)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('fr');"
+                        >français</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('es');"
+                        >Español</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('ar');"
+                        >العربية</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('id');"
+                        >Bahasa Indonesia</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('th');"
+                        >ไทย</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('ru');"
+                        >русский</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" onclick="setLanguage('vi');"
+                        >Tiếng Việt</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="login">
+                <a
+                  href="https://vfun.valofe.com/membership/signin?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >로그인</a
+                >
+              </li>
+              <li class="signup">
+                <a
+                  href="https://vfun.valofe.com/membership/signup?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >회원가입</a
+                >
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!-- 컴바인메뉴 end -->
+
+    <div id="wrapper" class="bg-even clearfix">
+      <!-- crt메뉴 start -->
+      <header id="mobileHeader" class="clearfix">
+        <h1 id="crtMenu">Home&nbsp;<span class="fa fa-sort-down"></span></h1>
+        <ul class="pull-right">
+          <li id="right-lang">
+            <div class="cbm-sel-lang" id="mobile-right">
+              <a href="javascript:void(0);" class="sel-tit"
+                >
+                한국어
+              </a>
+              <ul class="view2">
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('en');"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('de');"
+                    >Deutsch</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('tr');"
+                    >Türkçe</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('pt');"
+                    >português</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('tw');"
+                    >中文(繁体)</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('jp');"
+                    >日本語</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('cn');"
+                    >中文(简体)</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('fr');"
+                    >français</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('es');"
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('ar');"
+                    >العربية</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('id');"
+                    >Bahasa Indonesia</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('th');"
+                    >ไทย</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('ru');"
+                    >русский</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0);" onclick="setLanguage('vi');"
+                    >Tiếng Việt</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </header>
+
+      <div id="mbSub">
+        <h1>VFUN <span class="valofe-platform">| VALOFE 플랫폼</span></h1>
+        <ul class="dep1">
+          <li class="on"><a href="/">Home</a></li>
+          <li class="">
+            <a href="/game/all_games"
+              >게임 <span class="fa fa-sort-down"></span
+            ></a>
+            <ul class="dep2">
+              <li class="">
+                <a href="/game/all_games"> 전체 게임</a>
+              </li>
+              <li class="">
+                <a href="/game/popular_games"> 인기 게임 </a>
+              </li>
+              <li class="">
+                <a href="/game/download"> 다운로드 </a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="/community/event">
+              커뮤니티 <span class="fa fa-sort-down"></span
+            ></a>
+            <ul class="dep2">
+              <li class="">
+                <a href="/community/event">이벤트</a
+                >
+              </li>
+              <li class="">
+                <a href="/community/news">뉴스</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a
+              href="/stamp"
+              onclick="gtag('event', 'click', {'event_category': 'mission', 'event_label': 'CRT MENU'});"
+            >
+              스탬프 <span class="fa fa-sort-down"></span
+            ></a>
+            <ul class="dep2">
+              <li class="">
+                <a
+                  href="/stamp"
+                  onclick="gtag('event', 'click', {'event_category': 'mission', 'event_label': 'CRT MENU'});"
+                  >미션</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="/stamp/shop"
+                  onclick="gtag('event', 'click', {'event_category': 'point shop', 'event_label': 'CRT MENU'});"
+                  >포인트 샵</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="/stamp/my_stamp"
+                  onclick="gtag('event', 'click', {'event_category': 'my stamp', 'event_label': 'CRT MENU'});"
+                  >내 스탬프</a
+                >
+              </li>
+              <li class="">
+                <a href="/stamp/history">히스토리</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a
+              href="https://vfun.valofe.com/membership/myinfo?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+              >멤버십&nbsp;<span class="fa fa-sort-down"></span
+            ></a>
+            <ul class="dep2">
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/membership/signup?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >회원가입</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/membership/signin?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >로그인</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/membership/find_id?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >아이디 찾기</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/membership/find_pw?service_code=vfun&ret=http%3A%2F%2Fvfun.valofe.com%2Fhome"
+                  >비밀번호 찾기</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="https://vfun.valofe.com/customer/support?service_code=vfun"
+              >고객센터 <span class="fa fa-sort-down"></span
+            ></a>
+            <ul class="dep2">
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/customer/support?service_code=vfun"
+                >
+                  FAQ
+                </a>
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/customer/inquiry_list?service_code=vfun"
+                >
+                  문의내역
+                </a>
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/customer/inquiry_not_login?service_code=vfun"
+                >
+                  비회원 문의하기
+                </a>
+              </li>
+
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/customer/terms?service_code=vfun"
+                >
+                  이용약관
+                </a>
+              </li>
+              <li class="">
+                <a
+                  href="https://vfun.valofe.com/customer/privacy?service_code=vfun"
+                >
+                  개인정보처리방침
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="wrap-canvas">
+              <div class="crt-bar crt-bg" style="z-index: 2">
+                <div class="crt-earth"></div>
+                <div class="crt-hi animated infinite jackInTheBox"></div>
+                <div class="crt-robot"></div>
+                <div class="crt-wanna-fun">Want fun? VFUN!</div>
+              </div>
+              <canvas
+                id="canvas"
+                width="864"
+                height="149"
+                style="z-index: 1"
+              ></canvas>
+            </div>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" id="closeMbSub"
+          ><span class="fa fa-times-circle-o"></span
+        ></a>
+      </div>
+      <div id="mbMenuShadow"></div>
+      <!-- crt 메뉴 end -->
+
+      <!-- 콘텐츠 영역 start -->
+      <div id="content" class="clearfix">
+
+        <!-- 메인배너  start-->
+        <section class="visual">
+
+          <div class="sliderContainer">
+            <div id="sync1" class="slider single-item">
+
+              <!-- slider 1 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211112/618e244bd536f.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+              <!-- slider 2 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211103/618252a27896d.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+              <!-- slider 3 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211028/617a3d8636cb2.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+              <!-- slider 4 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211028/617a3ad290566.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+              
+
+              <!-- slider 5 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211027/61790675b4af3.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+
+              <!-- slider 6 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211027/6178e4325c90e.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+
+              <!-- slider 7 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211026/617791c9656c7.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+
+
+              <!-- slider 8 -->
+              <div class="click-area" onclick="window.open('www.naver.com','_blank'); gtag('event', 'click', {'event_category': 'main-event-banner', 'event_label': 'Dekaron_'});">
+                <img class="img" src="https://file.valofe.com/Valofe_file/web/vfun/images/banner/20211110/618ba12026e45.jpg?v=20211121020753">
+                <article class="article">
+                  <img class="logo" src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210420/607e4d05bafd3.png" alt="Dekaron">
+                  <span class="tit">
+                      Join us into the world of Dekarons!<br />Play now to acquire Trieste's Blessing.
+                  </span>
+              </article>
+              </div>
+            </div>
+
+            <!-- progress bar -->
+            <div class="progressBarContainer clearfix" >
+                    
+              <div class="bar">
+                <h3 class="tit"><span>Dekaron</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+              <div class="bar">
+                <h3 class="tit"><span>Combat Arms: Reloaded</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+                <h3 class="tit"><span>ATLANTICA Global</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+                <h3 class="tit"><span>ATLANTICA Europe</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+              <h3 class="tit"><span>Combat Arms: Reloaded</span></h3>
+              <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+              <h3 class="tit"><span>Icarus M: Riders of Icarus</span></h3>
+              <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+                <h3 class="tit"><span>Combat Arms: the Classic</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+
+              <div class="bar">
+                <h3 class="tit"><span>王牌對決</span></h3>
+                <span data-slick-index="Array" class="progressBar"></span>
+              </div>
+
+          </div> <!-- slider container -->
+
+        </section>
+        <!-- 메인배너  end-->
+
+        <!-- 전체게임보기 start-->
+        <div class="row-w clearfix see-all-top ">
+          <a href="#allGame" class="go-to-section smooth-goto" ><span class="fas fa-angle-double-down"></span>&nbsp;All Games</a>
+        </div>
+        <!-- 전체게임보기 end-->
+
+        <!-- 포인트샵 start-->
+        <section class="pointshop">
+          <div class="row-w clearfix">
+            <h1 class="text-left">Point Shop&nbsp;<a href="/stamp/shop" target="_self" class="main-more">See All Point shop Items&nbsp;<i class="fa fa-angle-right"></i></a></h1>
+            <div class="wrap-pointshop">
+              <div id="pointShop">
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_ca-r3.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_ca-c2.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="" class="clearfix">
+                    <div class="game-image pull-left">
+                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_item_at1.png" alt="Recovery Stone (No Trade)">
+                    </div>
+                    <div class="game-txt pull-right">
+                      <h4>ATLANTICA Global</h4>
+                      <h5>Recovery Stone (No Trade)</h5>
+                      <span class="price"><b>P</b><span>50</span></span>
+                  </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 포인트샵  start-->
+
+        <!-- 인기게임 start  -->
+        <section class="main-cont">
+        <div class="row-w">
+            <div class="hot-game pull-left two-of-third">
+                <h1>
+                    HOTTEST GAME
+                    <a  href="/game/popular_games" target="_self" class="main-more"><i class="fa fa-plus"></i></a>
+                </h1>
+
+                <ul class="clearfix">
+
+                  <li class="mb-style update">
+                    <div class="default clearfix">
+                      <div class="img-area pc">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210628/60d96aa163fd7.png" alt="ATLANTICA Global" onclick="window.open('http://at.valofe.com','_self'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">
+                      </div>
+                      <div class="desc">
+                        <h3 onclick="window.open('http://at.valofe.com','_blank'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">ATLANTICA Global</h3>
+                        <p>
+                          <span class="fa fa-desktop"></span>&nbsp;
+                        MMORPG
+                        </p>
+                        <div class="btn-mb-download download-multi one">
+                        <div class="a-wrap clearfix">
+                            <a href="javascript:void(0);" class="mb-icon" style="z-index:9990;" onclick="COMMON.download('28','http%3A%2F%2Fat.valofe.com%2Fsupport%2Fclient_download');">
+                                <img src="images/icon-desktop.png" alt="desktop Download" name="icon-desktop">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </li>
+
+                  <li class="mb-style update">
+                    <div class="default clearfix">
+                      <div class="img-area pc">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210628/60d96aa163fd7.png" alt="ATLANTICA Global" onclick="window.open('http://at.valofe.com','_self'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">
+                      </div>
+                      <div class="desc">
+                        <h3 onclick="window.open('http://at.valofe.com','_blank'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">ATLANTICA Global</h3>
+                        <p>
+                          <span class="fa fa-desktop"></span>&nbsp;
+                        MMORPG
+                        </p>
+                        <div class="btn-mb-download download-multi one">
+                        <div class="a-wrap clearfix">
+                            <a href="javascript:void(0);" class="mb-icon" style="z-index:9990;" onclick="COMMON.download('28','http%3A%2F%2Fat.valofe.com%2Fsupport%2Fclient_download');">
+                                <img src="images/icon-desktop.png" alt="desktop Download" name="icon-desktop">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </li>
+
+                  <li class="mb-style update">
+                    <div class="default clearfix">
+                      <div class="img-area pc">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210628/60d96aa163fd7.png" alt="ATLANTICA Global" onclick="window.open('http://at.valofe.com','_self'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">
+                      </div>
+                      <div class="desc">
+                        <h3 onclick="window.open('http://at.valofe.com','_blank'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">ATLANTICA Global</h3>
+                        <p>
+                          <span class="fa fa-desktop"></span>&nbsp;
+                        MMORPG
+                        </p>
+                        <div class="btn-mb-download download-multi one">
+                        <div class="a-wrap clearfix">
+                            <a href="javascript:void(0);" class="mb-icon" style="z-index:9990;" onclick="COMMON.download('28','http%3A%2F%2Fat.valofe.com%2Fsupport%2Fclient_download');">
+                                <img src="images/icon-desktop.png" alt="desktop Download" name="icon-desktop">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </li>
+
+                  <li class="mb-style update">
+                    <div class="default clearfix">
+                      <div class="img-area pc">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210628/60d96aa163fd7.png" alt="ATLANTICA Global" onclick="window.open('http://at.valofe.com','_self'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">
+                      </div>
+                      <div class="desc">
+                        <h3 onclick="window.open('http://at.valofe.com','_blank'); gtag('event', 'click', {'event_category': 'main-game-list', 'event_label': 'ATLANTICA Global'});">ATLANTICA Global</h3>
+                        <p>
+                          <span class="fa fa-desktop"></span>&nbsp;
+                        MMORPG
+                        </p>
+                        <div class="btn-mb-download download-multi one">
+                        <div class="a-wrap clearfix">
+                            <a href="javascript:void(0);" class="mb-icon" style="z-index:9990;" onclick="COMMON.download('28','http%3A%2F%2Fat.valofe.com%2Fsupport%2Fclient_download');">
+                                <img src="images/icon-desktop.png" alt="desktop Download" name="icon-desktop">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </li>
+                  
+                </ul>
+
+            </div>
+
+            <!-- point ranking -->
+            <div class="ranking pull-right one-of-third">
+                <h1>
+                  Point Ranking
+                </h1>
+                <ul class="tab-rank clearfix">
+                    <li class="rank-type _1">
+                        <a href="javascript:void(0);">
+                          Weekly
+                        </a>
+                    </li>
+                    <li class="rank-type _2 on">
+                        <a href="javascript:void(0);">
+                            Monthly
+                          </a>
+                    </li>
+                </ul>
+                <ol class="rank-list _1  clearfix">
+                  <li><span class="rank _1">1</span>&nbsp;<strong class="ellipsis">ArAgOn21</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">7,992</span></div></li>
+                    <li><span class="rank _2">2</span>&nbsp;<strong class="ellipsis">MiltonZenteno</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">5,994</span></div></li>
+                    <li><span class="rank _3">3</span>&nbsp;<strong class="ellipsis">radonja</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">5,994</span></div></li>
+                    <li><span class="rank _4">4</span>&nbsp;<strong class="ellipsis">Skullmarc</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">5,994</span></div></li>
+                    <li><span class="rank _5">5</span>&nbsp;<strong class="ellipsis">Pacuny</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">4,995</span></div></li>
+                    <li><span class="rank _6">6</span>&nbsp;<strong class="ellipsis">dersim2727</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">4,995</span></div></li>
+                    <li><span class="rank _7">7</span>&nbsp;<strong class="ellipsis">sam74</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">4,995</span></div></li>
+                    <li><span class="rank _8">8</span>&nbsp;<strong class="ellipsis">znek777</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">4,995</span></div></li>
+                  </ol>
+                <ol class="rank-list _2  on clearfix">
+                    <li><span class="rank _1">1</span>&nbsp;<strong class="ellipsis">Razved4ik</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">39,041</span></div></li>
+                    <li><span class="rank _2">2</span>&nbsp;<strong class="ellipsis">AraGon21</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">31,968</span></div></li>
+                    <li><span class="rank _3">3</span>&nbsp;<strong class="ellipsis">dersim2727</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">28,971</span></div></li>
+                    <li><span class="rank _4">4</span>&nbsp;<strong class="ellipsis">bpweb</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">21,978</span></div></li>
+                    <li><span class="rank _5">5</span>&nbsp;<strong class="ellipsis">Incrediibles</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">21,978</span></div></li>
+                    <li><span class="rank _6">6</span>&nbsp;<strong class="ellipsis">RafiStefano</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">21,978</span></div></li>
+                    <li><span class="rank _7">7</span>&nbsp;<strong class="ellipsis">kabusbuyuk</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">21,978</span></div></li>
+                    <li><span class="rank _8">8</span>&nbsp;<strong class="ellipsis">mithrandir15</strong><div class="pull-right piling"><span class="blit">Points</span><span class="num">20,979</span></div></li>
+                </ol>
+            </div>
+        </div>
+        </section>
+        <!-- 인기게임 end   -->
+
+        <!-- 전체게임 리스트 start -->
+        <section class="main-cont all-game" id="allGame">
+          <div class="row-w">
+            <h1>All Games
+              <a href="javascript:void(0);" class="btn-type _1 on" onclick="fnListType('_1');"></a>
+              <a href="javascript:void(0);" class="btn-type _2" onclick="fnListType('_2');"></a>
+            </h1>
+
+            <!-- all list 1 -->
+            <div class="all-list _1 on clearfix">
+              <div class="pc-list">
+                <h2>PC games</h2>
+                <ul class="clearfix">
+
+                  <li>
+                      <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                        <div class="img-area">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                          <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                        </div>
+                        <div class="tit">
+                          <dl>
+                            <dt>C9 Global</dt>
+                            <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                          </dl>
+                        </div>
+                      </div>
+                      <div class="hover clearfix">
+                        <h3>C9 Global</h3>
+                        <p>MMORPG</p>
+                        <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                        <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                      </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+
+                  <li>
+                    <div class="normal clearfix" onclick="window.open('https://c9-gl.valofe.com');">
+                      <div class="img-area">
+                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a117f80.png" alt="C9 Global">
+                        <span class="logo"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a1d373e.png" alt="C9 Global"></span>
+                      </div>
+                      <div class="tit">
+                        <dl>
+                          <dt>C9 Global</dt>
+                          <dd><span class="fa fa-desktop"></span>&nbsp;&nbsp;MMORPG</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="hover clearfix">
+                      <h3>C9 Global</h3>
+                      <p>MMORPG</p>
+                      <a href="javascript:void(0)" class="event" onclick="window.open('https://c9-gl.valofe.com');">Go to play</a>
+                      <a href="/game/more?idx=33" target="_self" class="event">Details</a>
+                    </div>                     
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="mobile-list">
+                <h2>Mobile Games</h2>
+                <ul class="clearfix">
+                    
+                  <li class="update">
+                    <div class="default clearfix">
+                        <div class="img-area">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/game-type1-icam-gl-new-min.jpg" alt="Icarus M: Riders of Icarus">
+                        </div>
+                        <div class="desc">
+                            <h3>Icarus M: Riders of Icarus</h3>
+                            <p>
+                            MMORPG                                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hover-desc clearfix">
+                        <h3>Icarus M: Riders of Icarus</h3>
+                        <p>
+                          <span class="fa fa-android"></span>&nbsp;
+                          <span class="fa fa-apple"></span>&nbsp;
+                            MMORPG            
+                        </p>
+                      <div class="btn-mb-download download-multi one"> 
+                        <div class="a-wrap clearfix">                                                                                                                                                   <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                          <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                            <img src="images/icon-aos.png" alt="Android Download" name="icon-aos">
+                          </a>  
+                          <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">                                                                                                                                                                                                                                                                                                                                                                                                                                     <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">
+                            <img src="images/icon-ios.png" alt="iOS Download" name="icon-ios">
+                          </a>                                                                                                                                                                                              </div>
+                      </div>                                                                                              
+                      <a href="/game/icarusm_global?idx=19" target="_self" class="btn-mb-download">
+                        Details                                        
+                      </a>             
+                      <a href="/stamp?type=99&idx=19" target="_self" class="btn-mb-download" onclick="gtag('event', 'click', {'event_category': 'mission', 'event_label': 'VFUN GAME BANNER'});">
+                      Stamp Mission                                    
+                      </a>                                                                                <a href="/stamp/shop?game_idx=19" target="_self" class="btn-mb-download" onclick="gtag('event', 'click', {'event_category': 'shop', 'event_label': 'VFUN GAME BANNER'});">
+                        Point Shop                                   
+                    </a>
+                  </div>
+                  </li>
+
+                  <li class="update">
+                    <div class="default clearfix">
+                        <div class="img-area">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/game-type1-icam-gl-new-min.jpg" alt="Icarus M: Riders of Icarus">
+                        </div>
+                        <div class="desc">
+                            <h3>Icarus M: Riders of Icarus</h3>
+                            <p>
+                            MMORPG                                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hover-desc clearfix">
+                        <h3>Icarus M: Riders of Icarus</h3>
+                        <p>
+                          <span class="fa fa-android"></span>&nbsp;
+                          <span class="fa fa-apple"></span>&nbsp;
+                            MMORPG            
+                        </p>
+                      <div class="btn-mb-download download-multi one"> 
+                        <div class="a-wrap clearfix">                                                                                                                                                   <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                          <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                            <img src="images/icon-aos.png" alt="Android Download" name="icon-aos">
+                          </a>  
+                          <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">                                                                                                                                                                                                                                                                                                                                                                                                                                     <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">
+                            <img src="images/icon-ios.png" alt="iOS Download" name="icon-ios">
+                          </a>                                                                                                                                                                                              </div>
+                      </div>                                                                                              
+                      <a href="/game/icarusm_global?idx=19" target="_self" class="btn-mb-download">
+                        Details                                        
+                      </a>             
+                      <a href="/stamp?type=99&idx=19" target="_self" class="btn-mb-download" onclick="gtag('event', 'click', {'event_category': 'mission', 'event_label': 'VFUN GAME BANNER'});">
+                      Stamp Mission                                    
+                      </a>                                                                                <a href="/stamp/shop?game_idx=19" target="_self" class="btn-mb-download" onclick="gtag('event', 'click', {'event_category': 'shop', 'event_label': 'VFUN GAME BANNER'});">
+                        Point Shop                                   
+                    </a>
+                  </div>
+                  </li>
+                  
+                  <li class="update">
+                    <div class="default clearfix">
+                        <div class="img-area">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/game-type1-icam-gl-new-min.jpg" alt="Icarus M: Riders of Icarus">
+                        </div>
+                        <div class="desc">
+                            <h3>Icarus M: Riders of Icarus</h3>
+                            <p>
+                            MMORPG                                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hover-desc clearfix">
+                        <h3>Icarus M: Riders of Icarus</h3>
+                        <p>
+                          <span class="fa fa-android"></span>&nbsp;
+                          <span class="fa fa-apple"></span>&nbsp;
+                            MMORPG            
+                        </p>
+                      <div class="btn-mb-download download-multi one"> 
+                        <div class="a-wrap clearfix">                                                                                                                                                   <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                          <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                            <img src="images/icon-aos.png" alt="Android Download" name="icon-aos">
+                          </a>  
+                          <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">                                                                                                                                                                                                                                                                                                                                                                                                                                     <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">
+                            <img src="images/icon-ios.png" alt="iOS Download" name="icon-ios">
+                          </a>                                                                                                                                                                                              </div>
+                      </div>                                                                                              
+                      <a href="/game/icarusm_global?idx=19" target="_self" class="btn-mb-download">
+                        Details                                        
+                      </a>             
+                    </div>
+                  </li>
+
+                  <li class="update">
+                    <div class="default clearfix">
+                        <div class="img-area">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/game-type1-icam-gl-new-min.jpg" alt="Icarus M: Riders of Icarus">
+                        </div>
+                        <div class="desc">
+                            <h3>Icarus M: Riders of Icarus</h3>
+                            <p>
+                            MMORPG                                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hover-desc clearfix">
+                        <h3>Icarus M: Riders of Icarus</h3>
+                        <p>
+                          <span class="fa fa-android"></span>&nbsp;
+                          <span class="fa fa-apple"></span>&nbsp;
+                            MMORPG            
+                        </p>
+                      <div class="btn-mb-download download-multi one"> 
+                        <div class="a-wrap clearfix">
+                          <a href="javascript:void(0);"  class="mb-icon" onclick="COMMON.download('71','https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.valofe.icarusm.na');">
+                            <img src="images/icon-aos.png" alt="Android Download" name="icon-aos">
+                          </a>  
+                          <a href="javascript:void(0);" class="mb-icon" onclick="COMMON.download('72','https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fid1507999406');">                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                            <img src="images/icon-ios.png" alt="iOS Download" name="icon-ios">
+                          </a>                                                                                                                                                                                              </div>
+                      </div>                                                                                              
+                      <a href="/game/icarusm_global?idx=19" target="_self" class="btn-mb-download">
+                        Details                                        
+                      </a>             
+                    </div>
+                  </li>
+              </ul>
+            </div>
+            </div>
+            
+            <!-- all list 2 -->
+            <div class="all-list _2 clearfix">
+                <div class="pc-list">
+                    <h2>PC Games</h2>
+                    <ul class="clearfix">                                                                                      
+                      <li class="">
+                        <a href="https://c9-gl.valofe.com" target="_self">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210712/60ebc29f05b44.png">
+                            C9 Global                                        
+                        </a>
+                      </li>                                                                 
+                      <li class="update">
+                          <a href="https://dekaron.valofe.com/" target="_self">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210420/607e4d030567c.jpg">
+                              Dekaron                                        
+                          </a>
+                      </li> 
+                      <li class="update">
+                      <a href="http://at.valofe.com" target="_self">
+                          <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d96aa0b6ada.png">
+                          ATLANTICA Global                                        
+                      </a>
+                      </li>
+                      <li class="update">
+                          <a href="https://combatarms-c.valofe.com" target="_self">
+                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_ca_c.png">
+                              Combat Arms: the Classic                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="http://icarus-na.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d95ad50406d.png">
+                              Riders of Icarus                                        
+                          </a>
+                      </li>
+                      <li class="update">
+                          <a href="https://at-eu.valofe.com/?service_code=at_eu" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d969fd28b6f.png">
+                              ATLANTICA Europe                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="http://luminary.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_lu.png">
+                              Luminary : Rise of the GoonZu                                        
+                          </a>
+                      </li>
+                      <li class="update">
+                          <a href="https://combatarms-r.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210906/6135ac0399577.png">
+                              Combat Arms: Reloaded                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="https://mulegend-gl.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20200911/5f5b55b4b52e8.png">
+                              MU Legend                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="http://blacksquad.com/" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20201112/5facf5ae5fab6.png">
+                              Black Squad                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="http://vfun.valofe.com/game/detail/realcasino" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_web_realcasino_min.jpg">
+                              Real Casino - Free Slots                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="https://icarus-sea.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210622/60d14c776236d.png">
+                              Riders of Icarus: SEA                                        
+                          </a>
+                      </li>
+                      <li class="update">
+                          <a href="https://blacksquad-tw.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-pc-blacksquad-tw-min.png">
+                              Black Squad: TW                                        
+                          </a>
+                      </li>
+                      <li class="">
+                          <a href="https://at-jp.valofe.com/main" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210628/60d96b4ce2f79.png">
+                              アトランティカオンライン                                        
+                          </a>
+                      </li>
+                      <li class="update">
+                          <a href="https://lostsaga-tw.valofe.com" target="_self">
+                              <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210715/60eff99d99ea2.png">
+                              王牌對決                                        
+                          </a>
+                      </li>
+                  </ul>
+                </div>
+
+              <!-- mobile list -->
+              <div class="mobile-list">
+                <h2>Mobile Games</h2>
+                <ul class="clearfix">                                                                              
+                  <li class="update">
+                      <a href="https://vfun.valofe.com/game/icarusm_global?idx=19" target="_blank"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-mb-icam-gl-new-min.png">
+                          Icarus M: Riders of Icarus                                        
+                      </a>
+                  </li>
+                                                  
+                  <li class="">
+                      <a href="https://fwtr.valofe.com" target="_blank"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210224/6035ffec7e4d0.jpg">
+                          Fantasy War Tactics R                                        
+                      </a>
+                  </li>
+                                                  
+                  <li class="">
+                      <a href="http://playicarusm-jp.com/" target="_blank"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon-mb-icam-jp-min.jpg">
+                          イカロスM                                        
+                      </a>
+                  </li>
+                                                  
+                  <li class="">
+                      <a href="https://fwtr.valofe.com/?lang=ja" target="_blank"><img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/20210224/6035ffec7e4d0.jpg">
+                          ファンタジーウォータクティクスR                                        
+                      </a>
+                  </li>
+              </ul>
+              </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- 전체게임 리스트 end -->
+
+        <!-- VFUN 비디오 start -->
+        <section class="main-cont">
+          <div class="row-w">
+            <div class="youtube-wrapper clearfix">
+          <h1>
+              VFUN VIDEOS&nbsp;<a href="https://www.youtube.com/channel/UCBOhYvVCI0InwSoyCWsbPZw/videos" target="_blank" class="main-more"><i class="fa fa-plus"></i></a>
+              <div class="pull-right">
+                  <div class="g-ytsubscribe btn-youtube" data-channelid="UCBOhYvVCI0InwSoyCWsbPZw" data-layout="default" data-count="hidden"></div>
+                  <span class="wrap-page-num">
+                    <span class="ytb-bt-bg"><i class="fab fa-youtube"></i></span>
+                      Recently <span class="all-num">6</span>VIDEOS
+                  </span>
+              </div>
+          </h1>
+          <div class="youtube-list clearfix">
+              <ul class="" id="youtube">
+                <li>
+                  <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/jbgnmiwHuS8');">
+                      <img src="https://i.ytimg.com/vi/jbgnmiwHuS8/default.jpg" />
+                  </a>
+                  <dl>
+                      <dt>
+                          Atlantica Online - Y2021 Black Friday Exclusives                                                    
+                      </dt>
+                      <dd>2021-11-19</dd>
+                  </dl>
+                </li>
+                <li>
+                <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/quvJz6R1W1U');">
+                    <img src="https://i.ytimg.com/vi/quvJz6R1W1U/default.jpg" />
+                </a>
+                <dl>
+                    <dt>
+                        MU Legend - Black Friday Madness!                                                    
+                      </dt>
+                    <dd>2021-11-16</dd>
+                </dl>
+            </li>                                                                                              
+            <li>
+                <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/cYqZIU5_tww');">
+                    <img src="https://i.ytimg.com/vi/cYqZIU5_tww/default.jpg" />
+                </a>
+                <dl>
+                    <dt>
+                        Black Friday Event is here!                                                    
+                      </dt>
+
+                    <dd>2021-11-11</dd>
+                </dl>
+            </li>                                                                                                 
+            <li>
+                <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/YLJFY9izgqE');">
+                    <img src="https://i.ytimg.com/vi/YLJFY9izgqE/default.jpg" />
+                </a>
+                <dl>
+                    <dt>
+                        M416 and Dragunov - New Skins!                                                    
+                      </dt>
+                    <dd>2021-11-09</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/M6d9vMZqBcs');">
+                    <img src="https://i.ytimg.com/vi/M6d9vMZqBcs/default.jpg" />
+                </a>
+                <dl>
+                    <dt>
+                        New Zodiac Weapons                                                    
+                      </dt>
+
+                    <dd>2021-11-09</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="btn-play" onclick="fnYtPlay('https://www.youtube.com/embed/tSM5EuRhWNw');">
+                    <img src="https://i.ytimg.com/vi/tSM5EuRhWNw/default.jpg" />
+                </a>
+                <dl>
+                    <dt>
+                        Icarus M - Halloween Update!                                                    
+                      </dt>
+
+                    <dd>2021-11-05</dd>
+                </dl>
+            </li>                                                                                                                                                  
+          </ul>
+          </div>
+
+              </div>
+        </div>
+        </section>
+        <!-- VFUN 비디오 end -->
+
+        <!-- 이벤트/뉴스 start -->
+        <section class="main-cont">
+          <div class="row-w">
+              <div class="pull-left half big-news">
+                  <h1>
+                    Event&nbsp;<a href="/community/event" target="_self" class="main-more"><i class="fa fa-plus"></i></a>
+                    <div class="pull-right">
+                        <span class="wrap-page-num" id="eventNum">
+                        </span>
+                        <div class="cont-nav" id="event-nav">
+                            <span id="event-prev" class="nav-prev"><span class="fa fa-angle-left"></span></span>
+                            <span id="event-next" class="nav-next"><span class="fa fa-angle-right"></span></span>
+                        </div>
+                    </div>
+                  </h1>
+                  <ul id="main-event" class="news-list">                                                                                              
+                    <li class="no-img" data-dot="1">
+                        <a href="http://at.valofe.com/news/detail/4/809" target="_self">
+                          <div class="news-left">
+                              <dl>
+                                  <dt>
+                                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_ko.png"> Atlantica Online (NA)                                                    </dt>
+                                  <dd class="ellipsis-multi line-2">
+                                      Demon’s Maze                                                    
+                                    </dd>
+                                  <dd class="line-4 text">
+                                      Atlantica Online (NA) Event!                                                    
+                                    </dd>
+                              </dl>
+                              <span class="date">2021-11-17</span>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="no-img" data-dot="2">
+                        <a href="http://at.valofe.com/news/detail/4/807" target="_self">
+                          <div class="news-left">
+                              <dl>
+                                  <dt>
+                                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_ko.png"> Atlantica Online (NA)                                                    </dt>
+                                  <dd class="ellipsis-multi line-2">
+                                      Black Friday 2021                                                    
+                                    </dd>
+                                  <dd class="line-4 text">
+                                      Atlantica Online (NA) Event!                                                    
+                                    </dd>
+                              </dl>
+                              <span class="date">2021-11-17</span>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="no-img" data-dot="3">
+                        <a href="http://at.valofe.eu/news/detail/4/749" target="_self">
+                          <div class="news-left">
+                              <dl>
+                                  <dt>
+                                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_eu.jpg"> Atlantica Online (EU)                                                    </dt>
+                                  <dd class="ellipsis-multi line-2">
+                                      Black Friday 2021                                                    
+                                    </dd>
+                                  <dd class="line-4 text">
+                                      Atlantica Online (EU) Event!                                                    
+                                    </dd>
+                              </dl>
+                              <span class="date">2021-11-17</span>
+                          </div>
+                        </a>
+                    </li>                                                                             
+                    <li class="no-img" data-dot="4">
+                        <a href="http://at.valofe.eu/news/detail/4/750" target="_self">
+                          <div class="news-left">
+                              <dl>
+                                  <dt>
+                                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_eu.jpg"> Atlantica Online (EU)                                                    </dt>
+                                  <dd class="ellipsis-multi line-2">
+                                      Thanksgiving 2021                                                    
+                                    </dd>
+                                  <dd class="line-4 text">
+                                      Atlantica Online (EU) Event!                                                    
+                                    </dd>
+                              </dl>
+                              <span class="date">2021-11-17</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="no-img" data-dot="5">
+                        <a href="http://at.valofe.eu/news/detail/4/751" target="_self">
+                            <div class="news-left">
+                              <dl>
+                                  <dt>
+                                      <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_eu.jpg"> Atlantica Online (EU)                                                    </dt>
+                                  <dd class="ellipsis-multi line-2">
+                                      Demon’s Maze                                                    
+                                    </dd>
+                                  <dd class="line-4 text">
+                                      Atlantica Online (EU) Event!                                                    
+                                    </dd>
+                              </dl>
+                              <span class="date">2021-11-17</span>
+                            </div>
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+
+              <!-- 공지 영역: 뉴스 -->
+              <div class="box pull-right half small-news">
+                  <h1>
+                      News&nbsp;<a href="/community/news" target="_self" class="main-more"><i class="fa fa-plus"></i></a>
+                      <div class="pull-right">
+                          <span class="wrap-page-num" id="newsNum">
+                              <span class="current-num">1</span>/<span class="all-num">5</span>
+                          </span>
+                          <div class="cont-nav" id="news-nav">
+                              <span class="nav-prev" id="news-prev"><span class="fa fa-angle-left"></span></span>
+                              <span class="nav-next" id="news-next"><span class="fa fa-angle-right"></span></span>
+                          </div>
+                      </div>
+                  </h1>
+
+                  <ul id="main-news" class="news-list">                                                                                                   
+                    <li class="has-img news_1" data-dot="1" >
+                        <a href="https://forums.valofe.com/forum/icarus-global/news-and-announcements/sales/32502-ellora’s-shop-update-–-november-24-2021" class="" target="_blank">
+                            <div class="news-top newsTop_1"><img src="https://forums.valofe.com/filedata/fetch?id=32509&amp;d=1632752978" onerror='ImgException("news", "1", "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_icarus-na.png", "Riders of ICARUS", "Ellora’s Shop Update – November 24, 2021", "Ellora’s Shop Update – November 10, 2021  Lucky Boxes Item Name GCoins Guild Invasion Lucky Box", "2021-11-19")'></div>
+                            <div class="news-bottom">
+                                <dl class="newsBottom_1">
+                                    <dt>
+                                        Riders of ICARUS                                                    </dt>
+                                    <dd class="ellipsis-multi line-2">
+                                        Ellora’s Shop Update – November 24, 2021                                                    
+                                      </dd>
+                                </dl>
+                                <span class="date">2021-11-19</span>
+                            </div>
+                        </a>
+                    </li>                                                                                                                 <li class="no-img" data-dot="2">
+                        <a href="http://at.valofe.jp/board/view?board_idx=1&sub_idx=2&idx=1842" class="" target="_self">
+                            <div class="news-bottom">
+                                <dl>
+                                    <dt>
+                                        <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_jp.jpg"> Atlantica Online (JP)                                                    </dt>
+                                    <dd class="ellipsis-multi line-2">
+                                          11月新規イベント「MBTIイベント」告知の一部誤りについて                                                    
+                                        </dd>
+                                    <dd class="line-4 text">
+                                        Atlantica Online (JP) News                                                    
+                                      </dd>
+                                </dl>
+                                <span class="date">2021-11-19</span>
+                            </div>
+
+                        </a>
+                    </li>
+                                                                                                                                                
+                    <li class="has-img news_3" data-dot="3" >
+                        <a href="https://forums.valofe.com/forum/combat-arms-reloaded/official-news-updates-aa/news-aa/32475-now-available-silver-wolf-weapon-set-11-17-12-29" class="" target="_blank">
+                            <div class="news-top newsTop_3"><img src="https://forums.valofe.com/filedata/fetch?id=32476&amp;d=1637216899" onerror='ImgException("news", "3", "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_ca_r.png", "Combat Arms: Reloaded", "[NOW AVAILABLE] Silver Wolf Weapon Set - 11/17-12-29", "Silver Wolf Mystery Box   Soccer Ball Mystery Box x1 | Price: 600 GC  Soccer Ball Mystery Box x5 | Price: 2,400 GC  Soccer Ball Mystery Box x10 |...", "2021-11-18")'></div>
+                            <div class="news-bottom">
+                                <dl class="newsBottom_3">
+                                    <dt>
+                                        Combat Arms: Reloaded                                                    </dt>
+                                    <dd class="ellipsis-multi line-2">
+                                        [NOW AVAILABLE] Silver Wolf Weapon Set - 11/17-12-29                                                    
+                                      </dd>
+                                </dl>
+                                <span class="date">2021-11-18</span>
+                            </div>
+                        </a>
+                    </li>
+                                                                                                                                                
+                    <li class="has-img news_4" data-dot="4" >
+                        <a href="https://forums.valofe.com/forum/combat-arms-the-classic/official-news-updates-aa/news-aa/32459-black-friday-sale" class="" target="_blank">
+                            <div class="news-top newsTop_4"><img src="https://forums.valofe.com/filedata/fetch?id=32460&amp;d=1637122578" onerror='ImgException("news", "4", "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_ca_c.png", "Combat Arms: the Classic", "Black Friday Sale", "Rangers,  To join the craze this coming Black Friday, Combat Arms: The Classic Management is offering you other means to make the holidays more...", "2021-11-17")'></div>
+                            <div class="news-bottom">
+                                <dl class="newsBottom_4">
+                                    <dt>
+                                        Combat Arms: the Classic                                                    </dt>
+                                    <dd class="ellipsis-multi line-2">
+                                        Black Friday Sale                                                    
+                                      </dd>
+                                </dl>
+                                <span class="date">2021-11-17</span>
+                            </div>
+                        </a>
+                    </li>
+                                                                                                                                                
+                    <li class="has-img news_5" data-dot="5" >
+                        <a href="https://forums.valofe.com/forum/combat-arms-reloaded/official-news-updates-aa/news-aa/32443-patch-notes-2021-11-17" class="" target="_blank">
+                            <div class="news-top newsTop_5"><img src="https://forums.valofe.com/filedata/fetch?id=32444&amp;d=1637116454" onerror='ImgException("news", "5", "https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_ca_r.png", "Combat Arms: Reloaded", "Patch Notes 2021.11.17", "[CHANGE LOGS] 1.Server Stability  2.MA COMPENSATION a. 200% EXP &amp; GP Boost for 2021.11.17 Maintenance for the rest of the day. b. Functional...", "2021-11-17")'></div>
+                            <div class="news-bottom">
+                                <dl class="newsBottom_5">
+                                    <dt>
+                                        Combat Arms: Reloaded                                                    </dt>
+                                    <dd class="ellipsis-multi line-2">
+                                        Patch Notes 2021.11.17                                                    
+                                      </dd>
+                                </dl>
+                                <span class="date">2021-11-17</span>
+                            </div>
+                        </a>
+                    </li>
+                  </ul>
+                  <input type="hidden" id="rowIdx" name="rowIdx" value="" />
+                  <input type="hidden" id="worldKey" name="worldKey" value="" />
+                  <input type="hidden" id="serviceCode" name="serviceCode" value="" />
+                  <input type="hidden" id="charName" name="charName" value="" />
+                  <input type="hidden" id="charKey" name="charKey" value="" />
+              </div>
+          </div>
+        </section>
+        <!-- 이벤트/뉴스 end -->
+
+        <!-- G coin info start -->
+        <section class="gcoin-info" id="guideLink">
+          <div class="row-w">
+              <div class="clearfix">
+                  <img class="img-gcoin" src="images/phone.png" alt=" Buy easily and comfortably<br>Items wanted with G Coin.">
+                  <div class="desc">
+                      <span class="tit">
+                          Buy easily and comfortably<br>Items wanted with G Coin.                </span>
+                      <a href="https://api.valofe.com/redirect/billing?game=vfun&type=purchase" class="btn gcoin" target="_self">
+                          <span class="fa fa-angle-double-right"></span>&nbsp;&nbsp;&nbsp;
+                          Purchase G Coin                </a>
+                      <br>
+                      <strong class="define">
+                          What is G Coin?                </strong>
+                      <p class="sentence">
+                          This is money in internet to buy partial paid items of game serviced in VFUN.<br>You can charge G Coin in many different ways as you prefer.                </p>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- G coin info end -->
+
+        <!-- 가이드 랑크 start -->
+        <section class="guide-link" id="guideLink">
+          <div class="row-w">
+              <h1>[&nbsp;GUIDE LINK ]</h1>
+              <ul class="clearfix">
+                  <li>
+                      <a href="/community/event"
+                          onmouseover="rollUp('event', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-event.png');"
+                          onmouseout="rollDown('event', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-event-on.png');"
+                      >
+
+                          <img class="guide-icon" src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-event-on.png"
+                              name="event" alt="event">
+                          <span class="guide-txt">Event</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/customer/inquiry_list?service_code=vfun"
+                        onmouseover="rollUp('support', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-support.png');"
+                        onmouseout="rollDown('support', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-support-on.png');"
+                      >
+
+                          <img class="guide-icon" name="support" src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-support-on.png" alt="support">
+                          <span class="guide-txt">1:1 INQUIRY</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/game/download"
+                        onmouseover="rollUp('download', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-download.png');"
+                        onmouseout="rollDown('download', 'https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-download-on.png');"
+                      >
+                          <img class="guide-icon" name="download" src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-download-on.png" alt="game download">
+                          <span class="guide-txt">GAME DOWNLOAD</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+        </section>
+        <!-- 가이드 랑크 end -->
+
+      </div>
+      <!-- 콘텐츠 영역 end -->
+    </div>
+    <!-- wrapper end -->
+
+  </body>
+</html>

@@ -1,0 +1,847 @@
+html {
+  body {
+    // wrap-loading
+    .wrap-loading {
+      display: none;
+    }
+    // 컴바인메뉴
+    #combineMenu {
+      // position: relative;
+      font-size: 1rem;
+      z-index: 8888;
+      width: 100%;
+      height: 60px;
+      text-align: left;
+      background-color: #131313;
+      display: block;
+      position: fixed;
+
+      .wrap-cmb {
+        z-index: 9998;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        line-height: 57px;
+        ul.cb-menu {
+          position: relative;
+          padding-left: 22px;
+          & > li {
+            float: left;
+            line-height: 55px;
+            a {
+              color: $cl-white;
+              font-size: 14px;
+              width: 100%;
+              display: block;
+            }
+          }
+          .cbm-logo-li {
+            margin-right: 10px;
+            line-height: 55px;
+            .cbm-logo {
+              display: inline-block;
+              vertical-align: middle;
+              width: 81px;
+              height: 60px;
+              line-height: 30px;
+              color: $cl-white;
+              text-align: center;
+              background: url(https://file.valofe.com/Valofe_file/web/vfun/images/logo/logo-vfun.png)
+                0 18px no-repeat;
+              background-size: 74px auto;
+            }
+          }
+          .cbm-back {
+            display: none;
+          }
+          .cbm-bar {
+            .cbm-game {
+              vertical-align: middle;
+              font-size: 14px;
+              color: $cl-white;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 59px;
+              height: 59px;
+              display: table-cell;
+            }
+          }
+        }
+      }
+      form {
+        fieldset {
+          legend {
+          }
+          ul.login-area {
+            margin-right: 22px;
+            li {
+              float: left;
+              width: auto;
+              margin-left: 0;
+              font-size: 12px;
+              line-height: 60px;
+              a {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 12px;
+                font-size: 14px;
+                font-weight: 400;
+                color: $cl-white;
+              }
+              &#right-lang {
+                .cbm-sel-lang {
+                  position: relative;
+                  display: inline-block;
+                  width: auto;
+                  padding-right: 10px;
+                  text-align: left;
+
+                  .sel-tit {
+                    color: $cl-white;
+                    line-height: 60px;
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 10px;
+                    background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/cbm-sel-arrow.png)
+                      right center no-repeat;
+                    text-transform: uppercase;
+                    &.on {
+                      background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/cbm-sel-arrow-on.png)
+                        right center no-repeat;
+                    }
+                  }
+                }
+                ul.view2 {
+                  padding: 10px 0 15px;
+                  z-index: 9999;
+                  height: auto;
+                  position: absolute;
+                  top: 57px;
+                  width: 150px;
+                  left: unset;
+                  right: 0;
+                  background: #343333;
+                  line-height: 0.5rem;
+                  li {
+                    padding: 10px 20px 10px 30px;
+                    float: none;
+                    line-height: 8px;
+                    a {
+                      display: inline-block;
+                      height: 20px;
+                      text-align: left;
+                      color: $cl-white;
+                      text-transform: uppercase;
+                      line-height: 1.2;
+                      font-size: 12px;
+                      &:hover {
+                        color: #f92;
+                      }
+                      &:active {
+                        color: #f92;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .login {
+              margin-left: 0;
+              a {
+              }
+            }
+            .signup {
+              a {
+              }
+            }
+            & > a {
+              display: inline-block;
+              vertical-align: middle;
+              padding: 0 12px;
+              padding: 0 0.7rem;
+              font-size: 14px;
+              font-weight: 400;
+              color: $cl-white;
+            }
+          }
+        }
+      }
+    }
+
+    #wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+      // crt 메뉴
+      #mobileHeader {
+        display: block;
+        box-sizing: border-box;
+        z-index: 9000;
+        position: fixed;
+        top: 0;
+        padding-right: 16px;
+        height: 60px;
+        border-top: none;
+        background: 0 0;
+        color: $cl-white;
+        left: 50%;
+        width: 160px;
+        margin-left: -80px;
+        // 이후 스크립트로 너비마진변경
+
+        #crtMenu {
+          position: absolute;
+          display: inline-block;
+          width: 200px;
+          left: 50%;
+          margin-left: -100px;
+          line-height: 60px;
+          font-size: 14px;
+          font-weight: 900;
+          color: $cl-white;
+          cursor: pointer;
+          -webkit-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+          -moz-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+          -o-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+          letter-spacing: 0;
+          text-indent: 0;
+          text-align: center;
+          .fa-sort-up {
+            margin-left: 4px;
+            font-size: 16px;
+            vertical-align: middle;
+          }
+          .fa-sort-down {
+            margin-left: 4px;
+            padding-top: 19px;
+            font-size: 16px;
+            text-indent: 0;
+            vertical-align: top;
+          }
+        }
+        .pull-right {
+          display: none;
+          #right-lang {
+            position: relative;
+            display: inline-block;
+            width: auto;
+            padding-right: 10px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 900;
+            #mobile-right {
+              a {
+                color: #fff;
+                line-height: 60px;
+                position: relative;
+              }
+              & > a {
+                display: inline-block;
+                width: 100%;
+                padding-right: 10px;
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/cbm-sel-arrow.png)
+                  right center no-repeat;
+                text-transform: uppercase;
+              }
+              & > a.on {
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/cbm/cbm-sel-arrow-on.png)
+                  right center no-repeat;
+              }
+              ul.view2 {
+                z-index: 9999;
+                height: auto;
+                position: absolute;
+                top: 57px;
+                width: 150px;
+                left: unset;
+                right: -24px;
+                background: #343333;
+                line-height: 0.5rem;
+                li {
+                  padding: 16px;
+                  float: none;
+                  a {
+                    display: inline-block;
+                    height: 20px;
+                    text-align: left;
+                    color: #fff;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #mbSub {
+        display: block;
+        z-index: 9998;
+        position: fixed;
+        opacity: 0;
+        visibility: hidden;
+        box-sizing: border-box;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 30px 32px 40px;
+        background: $cl-white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+        -webkit-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+        -moz-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+        -o-transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+        &.on {
+          overflow-y: auto;
+          height: auto;
+          opacity: 1;
+          visibility: visible;
+          letter-spacing: -1px;
+          max-height: calc(100vh - 60px);
+        }
+        ul.dep1 {
+          & > li.on > a {
+            color: $cl-orange;
+            font-weight: 700;
+          }
+          & > li:hover > a {
+            color: $cl-orange;
+            font-weight: 700;
+          }
+          & > li:visited > a {
+            color: $cl-orange;
+            font-weight: 700;
+          }
+        }
+        h1 {
+          font-size: 18px;
+          font-weight: 700;
+          color: #000;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+          border-bottom: 3px solid #3f3f3f;
+          span {
+            font-size: 1rem;
+            font-weight: 700;
+          }
+        }
+        ul.dep1 {
+          width: 100%;
+          clear: both;
+          position: relative;
+          & > li {
+            width: 47%;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px 0 5px;
+
+            &:nth-child(1) {
+              float: left;
+            }
+            &:nth-child(2) {
+              float: right;
+            }
+            &:nth-child(3) {
+              float: left;
+            }
+            &:nth-child(4) {
+              float: none;
+              position: absolute;
+              top: 160px;
+              right: 0;
+            }
+            &:nth-child(5) {
+              float: left;
+              clear: left;
+            }
+            &:nth-child(6) {
+              float: none;
+              clear: left;
+            }
+            &:last-child {
+              float: none;
+              position: absolute;
+              top: 368px;
+              right: 0;
+              overflow: hidden;
+            }
+            a {
+              font-size: 0.9375rem;
+              font-weight: 700;
+              color: #3f3f3f;
+            }
+            & > a {
+              font-size: 16px;
+            }
+            .dep2 {
+              box-sizing: border-box;
+              width: 100%;
+              padding: 10px 20px 15px;
+              margin-top: 10px;
+              background: #fcf3ee;
+              & > li {
+                box-sizing: border-box;
+                float: none;
+                width: 100%;
+                padding: 10px 0 5px;
+                a {
+                  .fa {
+                    font-size: 0.9375rem;
+                    color: #000;
+                  }
+                }
+              }
+              &.dep2 {
+                & > li.on > a {
+                  color: $cl-orange;
+                  font-weight: 700;
+                }
+                & > li:hover > a {
+                  color: $cl-orange;
+                  font-weight: 700;
+                }
+                & > li:visited > a {
+                  color: $cl-orange;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+          .wrap-canvas {
+            width: 100%;
+            position: relative;
+            & > div {
+              &.crt-bar {
+                position: relative;
+                z-index: 2;
+                height: 149px;
+                width: 100%;
+                max-width: 864px;
+                clear: both;
+              }
+              &.crt-bg {
+                position: relative;
+                max-width: 864px;
+                width: 100%;
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-line.png)
+                  no-repeat center;
+              }
+              .crt-earth {
+                width: 208px;
+                height: 149px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-earth.png)
+                  0 0 no-repeat;
+              }
+              .crt-hi {
+                width: 44px;
+                height: 44px;
+                position: absolute;
+                left: 50%;
+                margin-left: -24.27%;
+                bottom: 64px;
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-hi.gif)
+                  0 0 no-repeat;
+              }
+              .crt-robot {
+                width: 32px;
+                height: 62px;
+                position: absolute;
+                left: 50%;
+                margin-left: -24.27%;
+                bottom: -4px;
+                background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-robot.png)
+                  0 0 no-repeat;
+              }
+              .crt-wanna-fun {
+                display: inline-block;
+                position: absolute;
+                left: 2rem;
+                top: 1.125rem;
+                color: #e68e77;
+                font-size: 20px;
+                font-size: 1.25rem;
+                font-weight: 700;
+              }
+            }
+            #canvas {
+              z-index: 1;
+              position: absolute;
+              margin: 0;
+              padding: 0;
+              top: 0;
+              left: 50%;
+              margin-left: -50%;
+              width: 100%;
+              min-width: 100%;
+              height: 149px;
+              background: $cl-white;
+            }
+          }
+        }
+        #closeMbSub {
+          // display: none;
+          display: block;
+          position: absolute;
+          top: 13px;
+          right: 30px;
+          width: 36px;
+          height: 36px;
+          z-index: 9999;
+          text-align: center;
+          .fa {
+            color: #000;
+            font-size: 32px;
+            font-weight: 400;
+            vertical-align: middle;
+            line-height: 36px;
+          }
+        }
+      }
+
+      #mbMenuShadow {
+        display: none;
+        opacity: 0;
+        z-index: 8000 !important;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding-bottom: 0;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background: rgba(0, 0, 0, 0.8);
+        &.on {
+          display: block;
+          opacity: 1;
+          z-index: 8000 !important;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          padding-bottom: 0;
+          top: 0;
+          left: 0;
+          background-size: cover;
+          background: rgba(0, 0, 0, 0.8);
+        }
+      }
+
+      //콘텐츠영역
+
+      #content {
+        margin-top: 60px;
+        // 메인배너
+        section {
+          &:first-child {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+          }
+        }
+
+        .visual {
+          margin-top: 3rem;
+          .sliderContainer {
+            position: relative;
+            .slider {
+              position: relative;
+              overflow: hidden;
+              color: #fff;
+              padding: 0;
+              font-size: 30px;
+              text-align: center;
+              .img {
+                max-height: 584.77px;
+                &.logo {
+                  height: 3.5em;
+                  margin-left: -2rem;
+                  width: auto;
+                }
+              }
+              .slick-slider {
+                position: relative;
+                overflow: hidden;
+                color: $cl-white;
+                padding: 0;
+                font-size: 30px;
+                text-align: center;
+                article {
+                  z-index: 10;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-60%);
+                  left: 10vw;
+                  word-break: normal;
+                  text-align: left;
+                  font-weight: 700;
+                  text-shadow: 0 0 2px rgba(127, 99, 54, 0.9);
+                  color: #fff;
+                  .tit {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-top: 48px;
+                    margin-top: 1em;
+                    padding-right: 0;
+                    width: 100%;
+                    color: #fff;
+                    line-height: 1.1;
+                    font-size: 1.25em;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+          .progressBarContainer {
+            position: absolute;
+            overflow: hidden;
+            bottom: 0;
+            border-bottom: none;
+            text-align: center;
+            left: 0;
+            width: 100%;
+            .bar {
+              display: inline-block;
+              position: relative;
+              width: calc(100% / 8 - 4.5px);
+              margin-bottom: -3px;
+              padding: 0;
+              cursor: pointer;
+              color: #fff;
+              .tit {
+                z-index: 1;
+                position: absolute;
+                box-sizing: border-box;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                line-height: inherit;
+                text-align: center;
+                display: table !important;
+                span {
+                  position: relative;
+                  display: table-cell !important;
+                  color: #000;
+                  vertical-align: middle;
+                  font-size: 1rem;
+                  font-style: normal;
+                  font-weight: 700;
+                }
+              }
+              .progressBar {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 3.5em;
+                background-color: rgba(255, 255, 255, 0.4);
+                transition: all 0.5s ease-in;
+                .inProgress {
+                  background-color: rgba(0, 102, 204, 0.7);
+                  width: 0%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        //전체게임보기
+        .see-all-top {
+          padding-top: 2rem;
+          z-index: 5;
+          text-align: right;
+          font-size: 25px;
+          font-size: 1.5625rem;
+          font-weight: 400;
+          letter-spacing: -1px;
+          letter-spacing: -0.0625rem;
+          color: rgba(60, 159, 253, 0.85);
+
+          .go-to-section {
+            font-size: 1.5625rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            letter-spacing: -0.0625rem;
+            color: rgba(60, 159, 253, 0.85);
+          }
+        }
+
+        // 포인트샵
+        .pointshop {
+          .row-w {
+            overflow: hidden;
+            h1 {
+            }
+            .wrap-pointshop {
+              position: relative;
+              width: 115%;
+              box-sizing: border-box;
+              margin: 0 auto;
+              #pointShop {
+                overflow: hidden;
+                width: 100%;
+                position: relative;
+                .slick-arrow {
+                  position: absolute;
+                  display: block;
+                  z-index: 1001;
+                  top: 50%;
+                  margin-top: -36px;
+                  min-width: inherit;
+                  width: 34px;
+                  height: 100%;
+                  outline: 0;
+                }
+                .slick-btn-prev {
+                  transition: all 0.2s linear;
+                  left: 1rem;
+                  cursor: pointer;
+                  background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_off.png)
+                    left top no-repeat;
+                  background-size: 100%;
+                }
+                .slick-btn-next {
+                  transition: all 0.2s linear;
+                  right: calc(15% - 1rem);
+                  cursor: pointer;
+                  background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_off.png)
+                    right top no-repeat;
+                  background-size: auto;
+                  background-size: 100%;
+                }
+                .item {
+                  position: relative;
+                  float: left;
+                  box-sizing: border-box;
+                  height: auto;
+                  border: 1px solid #efefef;
+                  a {
+                    .game-image {
+                      &.pull-left {
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 35%;
+                        height: 112px;
+                        background: #f2f2f2;
+                        img {
+                          margin-top: 0.25rem;
+                          height: 100%;
+                          height: 100%;
+                        }
+                      }
+                      &.pull-right {
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 65%;
+                        height: 112px;
+                        padding: 1rem 0 1rem 1rem;
+                        background: #fff;
+                        border-left: none;
+                      }
+                      .game-txt {
+                        h4 {
+                          font-size: 12px;
+                          color: #242424;
+                          margin-bottom: 0.6rem;
+                        }
+                        h5 {
+                          font-size: 12px;
+                          color: #242424;
+                          margin-bottom: 1rem;
+                          font-weight: 400;
+                        }
+                        .price {
+                          position: absolute;
+                          left: 1rem;
+                          bottom: 0.8rem;
+                          font-size: 12px;
+                          font-weight: 400;
+                          color: #242424;
+                          b {
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            line-height: 20px;
+                            border-radius: 10px;
+                            background: #00a3c0;
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 12px;
+                            text-align: center;
+                            margin-right: 0.5rem;
+                          }
+                          span {
+                            line-height: 20px;
+                            font-size: 12px;
+                            text-align: center;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // 인기게임
+        .main-cont {
+          .row-w {
+            .hot-game {
+              h1 {
+                .main-more {
+                  i {
+                  }
+                }
+              }
+              ul {
+                li {
+                  &.mb-style {
+                  }
+                  .update {
+                  }
+                  .default {
+                    .img-area {
+                    }
+                    .pc {
+                      img {
+                      }
+                    }
+                    .desc {
+                      h3 {
+                      }
+                      p {
+                        span {
+                        }
+                      }
+                      .btn-mb-download {
+                      }
+                      .a-wrap {
+                        .mb-icon {
+                          img {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

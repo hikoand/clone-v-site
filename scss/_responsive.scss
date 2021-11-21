@@ -1,0 +1,834 @@
+@media screen and (max-width: 1410px) {
+  html
+    body
+    #combineMenu
+    form
+    fieldset
+    ul.login-area
+    li#right-lang
+    .cbm-sel-lang#login-area {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  html
+    body
+    #combineMenu
+    form
+    fieldset
+    ul.login-area
+    li#right-lang
+    .cbm-sel-lang#login-area {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 13px;
+    body {
+      .wrap-loading {
+      }
+      // 컴바인 메뉴
+      #combineMenu {
+        .wrap-cmb {
+          ul.cb-menu {
+            & > li {
+              a {
+              }
+            }
+            .cbm-logo-li {
+              .cbm-logo {
+              }
+            }
+            .cbm-back {
+              .fa-chevron-left {
+              }
+            }
+            .cbm-bar {
+              .cbm-game {
+              }
+            }
+          }
+        }
+        form {
+          fieldset {
+            legend {
+            }
+            ul.login-area {
+              li {
+                a {
+                }
+                &#right-lang {
+                  .cbm-sel-lang {
+                    .sel-tit {
+                      &.on {
+                      }
+                    }
+                  }
+                  ul.view2 {
+                    li {
+                      a {
+                      }
+                    }
+                  }
+                }
+              }
+              .login {
+                a {
+                }
+              }
+              .signup {
+                a {
+                }
+              }
+              & > a {
+              }
+            }
+          }
+        }
+      }
+
+      #wrapper {
+        // crt 메뉴
+        #mobileHeader {
+          #crtMenu {
+          }
+          .pull-right {
+          }
+        }
+      }
+
+      #mbSub {
+        padding: 30px 16px 40px;
+        &.on {
+        }
+        ul.dep1 {
+        }
+        h1 {
+          span {
+          }
+        }
+        ul.dep1 {
+          & > li {
+            &:nth-child(1) {
+            }
+            &:nth-child(2) {
+            }
+            &:nth-child(3) {
+            }
+            &:nth-child(4) {
+            }
+            &:nth-child(5) {
+            }
+            &:nth-child(6) {
+            }
+            &:last-child {
+            }
+            a {
+            }
+            .dep2 {
+              & > li {
+                a {
+                }
+              }
+              &.dep2 {
+              }
+            }
+          }
+          .wrap-canvas {
+            & > div {
+              &.crt-bar {
+              }
+              &.crt-bg {
+              }
+              .crt-earth {
+              }
+              .crt-hi {
+              }
+              .crt-robot {
+              }
+              .crt-wanna-fun {
+              }
+            }
+            #canvas {
+            }
+          }
+        }
+        #closeMbSub {
+          .fa {
+          }
+        }
+      }
+      #wrapper {
+        #content {
+          .row-w {
+            max-width: 1100px !important;
+            width: calc(100% - 32px) !important;
+          }
+          .visual {
+            .sliderContainer {
+              .slick-slider {
+                article {
+                  width: calc(100% - 32px);
+                  left: 2rem;
+                  .logo {
+                    height: 3em;
+                  }
+                  .tit {
+                    font-size: 1em;
+                    line-height: 1.3;
+                  }
+                }
+              }
+            }
+            .progressBarContainer {
+              width: 96%;
+              margin-left: 2%;
+              .bar {
+                .tit {
+                  span {
+                  }
+                }
+                .progressBar {
+                  .inProgress {
+                  }
+                }
+              }
+            }
+          }
+          .see-all-top {
+            margin-top: 3rem;
+          }
+          .pointshop {
+            .row-w {
+              h1 {
+              }
+              .wrap-pointshop {
+                #pointShop {
+                  .item {
+                    a {
+                      .game-image {
+                        img {
+                        }
+                      }
+                      .game-txt {
+                        h4 {
+                        }
+                        h5 {
+                        }
+                        .price {
+                          b {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    body {
+      .wrap-loading {
+      }
+      // 컴바인 메뉴
+      #combineMenu {
+        font-size: 13px;
+        float: left;
+        border-bottom: none;
+        .wrap-cmb {
+          padding: 0 16px;
+
+          ul.cb-menu {
+            width: 100%;
+            padding-left: 0;
+            & > li {
+              margin-right: 0;
+              min-width: 32px;
+              float: left;
+              position: relative;
+              a {
+              }
+            }
+            .cbm-logo-li {
+              display: none;
+              .cbm-logo {
+              }
+            }
+            .cbm-back {
+              float: left;
+              display: inline-block;
+              .fa-chevron-left {
+                height: 57px !important;
+                line-height: 60px !important;
+              }
+            }
+            .cbm-bar {
+              .cbm-game {
+              }
+            }
+          }
+        }
+        form {
+          fieldset {
+            legend {
+            }
+            ul.login-area {
+              display: none;
+              li {
+                a {
+                }
+                &#right-lang {
+                  .cbm-sel-lang {
+                    .sel-tit {
+                      &.on {
+                      }
+                    }
+                  }
+                  ul.view2 {
+                    li {
+                      a {
+                      }
+                    }
+                  }
+                }
+              }
+              .login {
+                a {
+                }
+              }
+              .signup {
+                a {
+                }
+              }
+              & > a {
+              }
+            }
+          }
+        }
+      }
+
+      #wrapper {
+        top: 0;
+        // crt 메뉴
+        #mobileHeader {
+          left: 100px;
+          width: calc(100% - 100px);
+          margin-left: inherit;
+          height: 60px;
+          background: rgb(19, 19, 19) none repeat scroll 0% 0%;
+          color: rgb(255, 255, 255);
+          #crtMenu {
+            left: calc(50% - 50px);
+          }
+          .pull-right {
+            position: relative;
+            width: auto;
+            display: inline-block;
+            padding-right: 10px;
+            text-align: left;
+          }
+        }
+        #mbSub {
+          padding: 30px 16px 40px;
+          &.on {
+          }
+          ul.dep1 {
+          }
+          h1 {
+            span {
+            }
+          }
+          ul.dep1 {
+            & > li {
+              &:nth-child(1) {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+              &:nth-child(5) {
+                float: left;
+                clear: left;
+              }
+              &:nth-child(6) {
+              }
+              &:last-child {
+              }
+              a {
+              }
+              .dep2 {
+                & > li {
+                  a {
+                  }
+                }
+                &.dep2 {
+                }
+              }
+            }
+            .wrap-canvas {
+              & > div {
+                &.crt-bar {
+                }
+                &.crt-bg {
+                }
+                .crt-earth {
+                }
+                .crt-hi {
+                }
+                .crt-robot {
+                }
+                .crt-wanna-fun {
+                }
+              }
+              #canvas {
+              }
+            }
+          }
+          #closeMbSub {
+            right: 16px;
+            .fa {
+            }
+          }
+        }
+        #content {
+          // 메인배너
+          section {
+            &:first-child {
+            }
+          }
+          .visual {
+            margin-top: 0;
+            margin-bottom: 3.8rem;
+            .sliderContainer {
+              .img {
+                height: 340px;
+              }
+              .slick-slider {
+              }
+            }
+            .progressBarContainer {
+              width: 100%;
+              margin-left: 0;
+              left: 0;
+              bottom: calc(-3em - 3px);
+              border-bottom: 3px solid #000;
+              border-top: 4px solid #000;
+              background: #000;
+              .bar {
+                background: rgba(0, 0, 0, 0.15);
+                .tit {
+                  padding: 0.2rem 0.2rem;
+                  span {
+                  }
+                }
+                .progressBar {
+                  .inProgress {
+                  }
+                }
+              }
+            }
+          }
+          .pointshop {
+            .row-w {
+              h1 {
+              }
+              .wrap-pointshop {
+                #pointShop {
+                  .item {
+                    a {
+                      .game-image {
+                        img {
+                        }
+                      }
+                      .game-txt {
+                        h4 {
+                        }
+                        h5 {
+                        }
+                        .price {
+                          b {
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    body {
+      .wrap-loading {
+      }
+      // 컴바인 메뉴
+      #combineMenu {
+        .wrap-cmb {
+          ul.cb-menu {
+            & > li {
+              a {
+              }
+            }
+            .cbm-logo-li {
+              .cbm-logo {
+              }
+            }
+            .cbm-back {
+              .fa-chevron-left {
+              }
+            }
+            .cbm-bar {
+              .cbm-game {
+              }
+            }
+          }
+        }
+        form {
+          fieldset {
+            legend {
+            }
+            ul.login-area {
+              li {
+                a {
+                }
+                &#right-lang {
+                  .cbm-sel-lang {
+                    .sel-tit {
+                      &.on {
+                      }
+                    }
+                  }
+                  ul.view2 {
+                    li {
+                      a {
+                      }
+                    }
+                  }
+                }
+              }
+              .login {
+                a {
+                }
+              }
+              .signup {
+                a {
+                }
+              }
+              & > a {
+              }
+            }
+          }
+        }
+      }
+
+      #wrapper {
+        // crt 메뉴
+        #mobileHeader {
+          #crtMenu {
+          }
+          .pull-right {
+          }
+        }
+        #mbSub {
+          &.on {
+          }
+          ul.dep1 {
+          }
+          h1 {
+            span {
+            }
+          }
+          ul.dep1 {
+            & > li {
+              &:nth-child(1) {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+              }
+              &:nth-child(5) {
+              }
+              &:nth-child(6) {
+              }
+              &:last-child {
+              }
+              a {
+              }
+              .dep2 {
+                & > li {
+                  a {
+                  }
+                }
+                &.dep2 {
+                }
+              }
+            }
+            .wrap-canvas {
+              & > div {
+                &.crt-bar {
+                }
+                &.crt-bg {
+                }
+                .crt-earth {
+                }
+                .crt-hi {
+                }
+                .crt-robot {
+                }
+                .crt-wanna-fun {
+                }
+              }
+              #canvas {
+              }
+            }
+          }
+          #closeMbSub {
+            right: 16px;
+            .fa {
+            }
+          }
+        }
+        #content {
+          // 메인배너
+          section {
+            &:first-child {
+            }
+          }
+          .visual {
+            max-height: 320px;
+            min-height: 320px;
+            width: auto;
+            margin-bottom: 3.8rem;
+            .sliderContainer {
+              .img {
+                max-height: 320px;
+                min-height: 320px;
+                margin-left: -280px;
+                width: auto;
+              }
+              .slick-slider {
+                article {
+                  top: 3.5em;
+                  font-size: 0.65em;
+                }
+              }
+            }
+            .progressBarContainer {
+              bottom: calc(-3em - 35px);
+              .bar {
+                width: calc(100% / 4 - 4px);
+                .tit {
+                  span {
+                  }
+                }
+                .progressBar {
+                  height: 3.2em;
+                  .inProgress {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    body {
+      .wrap-loading {
+      }
+      // 컴바인 메뉴
+      #combineMenu {
+        .wrap-cmb {
+          ul.cb-menu {
+            & > li {
+              a {
+              }
+            }
+            .cbm-logo-li {
+              .cbm-logo {
+              }
+            }
+            .cbm-back {
+              .fa-chevron-left {
+              }
+            }
+            .cbm-bar {
+              .cbm-game {
+              }
+            }
+          }
+        }
+        form {
+          fieldset {
+            legend {
+            }
+            ul.login-area {
+              li {
+                a {
+                }
+                &#right-lang {
+                  .cbm-sel-lang {
+                    .sel-tit {
+                      &.on {
+                      }
+                    }
+                  }
+                  ul.view2 {
+                    li {
+                      a {
+                      }
+                    }
+                  }
+                }
+              }
+              .login {
+                a {
+                }
+              }
+              .signup {
+                a {
+                }
+              }
+              & > a {
+              }
+            }
+          }
+        }
+      }
+
+      #wrapper {
+        // crt 메뉴
+        #mobileHeader {
+          #crtMenu {
+          }
+          .pull-right {
+          }
+        }
+        #mbSub {
+          padding: 30px 16px 40px;
+          &.on {
+          }
+          ul.dep1 {
+            & > li:nth-child(3) {
+              padding-bottom: 15px;
+            }
+          }
+          h1 {
+            span {
+            }
+          }
+          ul.dep1 {
+            clear: both;
+            position: relative;
+            & > li {
+              width: 100%;
+              float: none;
+              &:nth-child(1) {
+              }
+              &:nth-child(2) {
+              }
+              &:nth-child(3) {
+              }
+              &:nth-child(4) {
+                position: inherit;
+                top: inherit;
+                right: inherit;
+              }
+              &:nth-child(5) {
+              }
+              &:nth-child(6) {
+              }
+              &:last-child {
+                float: none;
+                position: inherit;
+                top: inherit;
+                right: inherit;
+              }
+              a {
+              }
+              .dep2 {
+                padding: 2px 20px 8px;
+                margin-top: 7px;
+                & > li {
+                  a {
+                  }
+                }
+                &.dep2 {
+                }
+              }
+            }
+            .wrap-canvas {
+              & > div {
+                &.crt-bar {
+                }
+                &.crt-bg {
+                }
+                .crt-earth {
+                }
+                .crt-hi {
+                }
+                .crt-robot {
+                }
+                .crt-wanna-fun {
+                }
+              }
+              #canvas {
+              }
+            }
+          }
+          #closeMbSub {
+            right: 16px;
+            .fa {
+            }
+          }
+        }
+        #content {
+          // 메인배너
+          section {
+            &:first-child {
+            }
+          }
+          .visual {
+            .sliderContainer {
+              .slick-slider {
+              }
+            }
+            .sliderContainer {
+              .img {
+                margin-left: -502px;
+              }
+              .slick-slider {
+                article {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
